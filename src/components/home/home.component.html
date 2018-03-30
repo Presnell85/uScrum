@@ -1,0 +1,79 @@
+<div class="container">
+    <img style="width: 1450px;" height="850" src="../../assets/images/me3.png">
+    <img class="top-left" width="100" height="75" src="../../assets/logo/rsz_1rsz_logowhite1.png">
+    <button mat-button class="top-rightish">Sign up</button>
+    <button mat-button class="top-rightish1">Log In</button>
+</div>
+
+<mat-card class="bigCard">
+  <mat-grid-list cols="3" rowHeight="3:3">
+      <mat-grid-tile class="tp-wrapper">
+        <mat-card class="smallCard tp-box" (click)="toggleFlip()" [@flipState]="flip">
+          <mat-card-content class="tp-box__side tp-box__front smallCard">
+              <h4 style="text-align:center">TODO:</h4>
+          <br>
+        Welcome to uScrum, a light weight simple solution to Project management
+          </mat-card-content>
+          <mat-card-content class="tp-box__side tp-box__back">
+              <h4 style="text-align:center">Back Side</h4>
+              <br>
+        Flip Bitch
+          </mat-card-content>
+      </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+          <mat-card class="smallCard">
+              <h4 style="text-align:center">WIP:</h4>
+              <br>
+                Why? I created uScrum because Jira/Trello are to much. There needed to be a hackable solution on the market that just managed small projects
+        </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <mat-card class="smallCard">
+                <h4 style="text-align:center">COMPLETED:</h4>
+                <br>
+            Best of all, It's Free!!! With no conditions, free integrations and entirely open source. Built by developers, with developers in mind.
+          </mat-card>
+          </mat-grid-tile>
+  </mat-grid-list>
+</mat-card>
+<br>
+
+<div class="middle-center">
+  <button mat-raised-button class="enter big-button">Enter</button>
+</div>
+<br>
+
+<mat-card-footer class="footer" style="background-color: #161E28">
+  <mat-grid-list cols="4" rowHeight=".75:.5">
+    <mat-grid-tile>
+        <mat-card-content >
+            <p class="footerContentHeader">uScrum</p>
+            <p class="footerContent">About</p>
+            <p class="footerContent">Terms</p>
+            <p class="footerContent">Developers</p>
+            <p class="footerContent">Contact</p>
+          </mat-card-content>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card-content>
+          <p class="footerContentHeader">Community</p>
+          <p class="footerContent">API</p>
+          <p class="footerContent">GitHub</p>
+          <p class="footerContent">Contribute</p>
+      </mat-card-content>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+      <i id="iCon" class="fa fa-github" style="font-size:48px;color: white;"></i>
+      <i id="iCon" class="fa fa-google-plus-circle" style="font-size:48px;color: white;"></i>
+      <i id="iCon" class="fa fa-reddit" style="font-size:48px;color: white;"></i>
+      <i id="iCon" class="fa fa-slack" style="font-size:48px;color: white;"></i>
+<img class="bottom-right" src="../../assets/logo/rsz_1rsz_logowhite1.png">
+</mat-card-footer>
+
+<mat-card-footer class="subfooter" style="background-color: #232B36">
+  <footer><small style="color: white;">&copy; Copyright 2018, uScrum, LLC, A <a href="https://pantsless.io" style="color:antiquewhite;"> Pantsless Innovation</a> Product || All rights are <i>so</i> fucking reserved!</small></footer>
+</mat-card-footer>
+
+
