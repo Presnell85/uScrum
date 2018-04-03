@@ -1,5 +1,9 @@
 import { Component, OnInit, trigger, state, style, transition, animate} from '@angular/core';
 import { AppComponent } from '../../app/app.component';
+import { MatCard } from '@angular/material';
+import { SprintComponent } from '../sprint/sprint.component';
+import { RouterModule, Routes } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -7,7 +11,7 @@ import { AppComponent } from '../../app/app.component';
   styleUrls: ['./home.component.css'],
   /*This is the animation that rotates the image*/
   animations: [
-    trigger('flipState', [
+    trigger('flipState',  [
       state('active', style({
         /*the axis (y) can define which direction the image will rotate*/
         transform: 'rotateY(179.9deg)'
@@ -20,6 +24,8 @@ import { AppComponent } from '../../app/app.component';
     ])
   ]
 })
+
+
 export class HomeComponent implements OnInit {
   flip: any = 'inactive';
 

@@ -8,31 +8,31 @@
 <mat-card class="bigCard">
   <mat-grid-list cols="3" rowHeight="3:3">
       <mat-grid-tile class="tp-wrapper">
-        <mat-card class="smallCard tp-box" (click)="toggleFlip()" [@flipState]="flip">
+        <mat-card id="card1" class="smallCard tp-box" (click)="toggleFlip()" [@flipState]="flip">
           <mat-card-content class="tp-box__side tp-box__front smallCard">
               <h4 style="text-align:center">TODO:</h4>
           <br>
-        Welcome to uScrum, a light weight simple solution to Project management
+        <img width="100" height="150" class="centerIcon" src="../../assets/logo/todo2 copy.png">
           </mat-card-content>
           <mat-card-content class="tp-box__side tp-box__back">
-              <h4 style="text-align:center">Back Side</h4>
               <br>
-        Flip Bitch
+        I founded uScrum for one reason. Jira was too expensive, and Trello just had to much stuff I didn't need.
+        I wanted a software solution that would allow me to integrate with my everyday environment.
           </mat-card-content>
       </mat-card>
       </mat-grid-tile>
       <mat-grid-tile>
-          <mat-card class="smallCard">
+          <mat-card id="card2" class="smallCard">
               <h4 style="text-align:center">WIP:</h4>
               <br>
-                Why? I created uScrum because Jira/Trello are to much. There needed to be a hackable solution on the market that just managed small projects
+              <img idth="100" height="150" class="centerIcon" src="../../assets/logo/WIP copy.png">
         </mat-card>
         </mat-grid-tile>
         <mat-grid-tile>
-            <mat-card class="smallCard">
+            <mat-card id="card3"class="smallCard">
                 <h4 style="text-align:center">COMPLETED:</h4>
                 <br>
-            Best of all, It's Free!!! With no conditions, free integrations and entirely open source. Built by developers, with developers in mind.
+                <img idth="100" height="150" class="centerIcon" src="../../assets/logo/complete copy.png">
           </mat-card>
           </mat-grid-tile>
   </mat-grid-list>
@@ -40,7 +40,8 @@
 <br>
 
 <div class="middle-center">
-  <button mat-raised-button class="enter big-button">Enter</button>
+  <button mat-raised-button class="enter big-button"><a routerLink= "/sprint"></a>Enter</button>
+  <router-outlet></router-outlet>
 </div>
 <br>
 

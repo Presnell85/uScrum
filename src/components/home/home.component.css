@@ -10,6 +10,13 @@ h1 {
   position: absolute;
   color: rgb(141, 139, 139);
 }
+
+.centerIcon {
+position: absolute;
+top: 22%;
+left: 25%;
+
+}
 /* Container holding the image and the text */
 .container {
   text-align: center;
@@ -137,7 +144,7 @@ small, footer {
 }
 
 .tp-wrapper {
-  perspective: 800px;
+  perspective: 250px;
 }
 .tp-box {
   position: relative;
