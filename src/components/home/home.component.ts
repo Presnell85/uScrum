@@ -1,9 +1,5 @@
+// IMPORT MODULES
 import { Component, OnInit, trigger, state, style, transition, animate} from '@angular/core';
-import { AppComponent } from '../../app/app.component';
-import { MatCard } from '@angular/material';
-import { SprintComponent } from '../sprint/sprint.component';
-import { RouterModule, Routes } from '@angular/router';
-
 
 @Component({
   selector: 'app-root',
@@ -24,9 +20,8 @@ import { RouterModule, Routes } from '@angular/router';
     ])
   ]
 })
-
-
 export class HomeComponent implements OnInit {
+
   flip: any = 'inactive';
 
   constructor() { }
@@ -34,7 +29,7 @@ export class HomeComponent implements OnInit {
   toggleFlip() {
     this.flip = (this.flip === 'inactive') ? 'active' : 'inactive';
   }
-  ngOnInit() {
-  }
+
+  ngOnInit() { }
 
 }
