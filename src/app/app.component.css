@@ -1,0 +1,19 @@
+/* Container holding the image and the text */
+.container {
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+/* Top right text */
+.top-rightish {
+  position: absolute;
+  top: 8px;
+  right: 100px;
+}
+
+.top-rightish1 {
+  position: absolute;
+  top: 8px;
+  right: 6px;
+}
