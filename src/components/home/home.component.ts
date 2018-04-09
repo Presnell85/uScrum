@@ -4,7 +4,7 @@ import { Component, OnInit, trigger, state, style, transition, animate} from '@a
 @Component({
   selector: 'app-root',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
+  styleUrls: ['./home.component.scss'],
   /*This is the animation that rotates the image*/
   animations: [
     trigger('flipState',  [

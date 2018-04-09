@@ -4,7 +4,7 @@ import { DragulaModule, DragulaService } from 'ng2-dragula/ng2-dragula';
 @Component({
   selector: 'app-sprint',
   templateUrl: './sprint.component.html',
-  styleUrls: ['./sprint.component.css']
+  styleUrls: ['./sprint.component.scss']
 })
 export class SprintComponent implements OnInit {
 

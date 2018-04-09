@@ -1,5 +1,5 @@
 // IMPORT MODULES
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA  } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { DragulaModule } from 'ng2-dragula';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -17,6 +17,9 @@ import { SprintComponent } from '../components/sprint/sprint.component';
 // IMPORT APP ROUTING MODULE
 import { AppRoutingModule } from './app-routing.module';
 
+// Import packages
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,8 +35,12 @@ import { AppRoutingModule } from './app-routing.module';
     // DRAGULE
     DragulaModule,
     // ROUTING
-    AppRoutingModule
+    AppRoutingModule,
+    // Navbar
+    MDBBootstrapModule.forRoot()
   ],
+  schemas:
+   [ NO_ERRORS_SCHEMA ],
   providers: [],
   bootstrap: [AppComponent]
 })
