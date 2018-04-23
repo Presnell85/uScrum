@@ -17,12 +17,6 @@ top: 22%;
 left: 25%;
 
 }
-/* Container holding the image and the text */
-.container {
-  text-align: center;
-  color: white;
-  position: relative;
-}
 
 .centered {
   position: absolute;
@@ -105,7 +99,7 @@ left: 25%;
 
 .bigCard {
   width: 1200px;
-  margin-left: 85px;
+  margin-left: 120px;
   transform: translateY(-80px);
 }
 
@@ -139,9 +133,6 @@ small, footer {
   backface-visibility: hidden;
   cursor: pointer;
 }
-.tp-box__front {
-  background: white;
-}
 
 .tp-wrapper {
   perspective: 250px;
@@ -157,67 +148,6 @@ small, footer {
 
 /*here is the actually flip in css*/
 .tp-box__back {
-  transform: rotateY(179.9deg);
-  height: 250px;
-  width: 250px;
-  background-color: #ffffff;
-}
-
-
-/*flip element*/
-.tp-box__side_2 {
-  backface-visibility: hidden;
-  cursor: pointer;
-}
-.tp-box__front_2 {
-  background: white;
-}
-
-.tp-wrapper_2 {
-  perspective: 800px;
-}
-.tp-box_2 {
-  position: relative;
-  width: 250px;
-  height: 250px;
-  margin: 3rem auto;
-  transform-style: preserve-3d;
-  transition: transform 1s;
-}
-
-/*here is the actually flip in css*/
-.tp-box__back_2 {
-  transform: rotateY(179.9deg);
-  height: 250px;
-  width: 250px;
-  background-color: #ffffff;
-}
-
-
-
-/*flip element*/
-.tp-box__side_3 {
-  backface-visibility: hidden;
-  cursor: pointer;
-}
-.tp-box__front_3 {
-  background: white;
-}
-
-.tp-wrapper_3 {
-  perspective: 800px;
-}
-.tp-box_3 {
-  position: relative;
-  width: 250px;
-  height: 250px;
-  margin: 3rem auto;
-  transform-style: preserve-3d;
-  transition: transform 1s;
-}
-
-/*here is the actually flip in css*/
-.tp-box__back_3 {
   transform: rotateY(179.9deg);
   height: 250px;
   width: 250px;

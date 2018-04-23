@@ -18,7 +18,6 @@ import { SprintComponent } from '../components/sprint/sprint.component';
 import { AppRoutingModule } from './app-routing.module';
 
 // Import packages
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 @NgModule({
   declarations: [
@@ -35,9 +34,8 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     // DRAGULE
     DragulaModule,
     // ROUTING
-    AppRoutingModule,
-    // Navbar
-    MDBBootstrapModule.forRoot()
+    AppRoutingModule
+
   ],
   schemas:
    [ NO_ERRORS_SCHEMA ],
